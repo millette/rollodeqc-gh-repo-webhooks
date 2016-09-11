@@ -19,6 +19,8 @@ The path is available in notifier.config.path.
 Users can also opt-out by setting the environment variable NO_UPDATE_NOTIFIER
 with any value or by using the --no-update-notifier flag on a per run basis.
 
+## Docs to come
+
 ## Usage
 ```js
 const rollodeqcGhRepoWebhooks = require('rollodeqc-gh-repo-webhooks')
