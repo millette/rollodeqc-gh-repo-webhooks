@@ -1,0 +1,45 @@
+{
+  "name": "rollodeqc-gh-repo-webhooks",
+  "version": "0.0.0",
+  "description": "RoLLodeQc utility to fetch repo webhooks.",
+  "license": "AGPL-3.0",
+  "repository": "millette/rollodeqc-gh-repo-webhooks",
+  "author": {
+    "name": "Robin Millette",
+    "email": "robin@millette.info",
+    "url": "http://robin.millette.info"
+  },
+  "bin": "cli.js",
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "lint": "standard",
+    "test": "standard && nyc ava",
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
+  },
+  "files": [
+    "index.js",
+    "cli.js"
+  ],
+  "keywords": [
+    "cli-app",
+    "cli",
+    "rollodeqc"
+  ],
+  "dependencies": {
+    "gh-got": "^5.0.0",
+    "meow": "^3.7.0",
+    "update-notifier": "^1.0.2"
+  },
+  "devDependencies": {
+    "ava": "^0.16.0",
+    "babel-eslint": "^6.1.2",
+    "coveralls": "^2.11.12",
+    "nyc": "^8.1.0",
+    "standard": "^8.0.0"
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  }
+}
