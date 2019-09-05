@@ -12,4 +12,4 @@ test('two args', async t => {
   t.truthy(result.hooks.length)
 })
 
-test('404', t => t.throwsAsync(fn('millette/rollodeqc-gh-repo-webhooks-404'), 'Response code 404 (Not Found)'))
+test('404', t => t.throwsAsync(fn('millette/rollodeqc-gh-repo-webhooks-404'), 'Not Found (404)'))
