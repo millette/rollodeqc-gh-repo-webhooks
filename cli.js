@@ -29,19 +29,19 @@ const rollodeqcGhRepoWebhooks = require('./')
 
 updateNotifier({ pkg: require('./package.json') }).notify()
 
-const cli = meow([
-  'Usage',
-  '  $ rollodeqc-gh-repo-webhooks [input]',
-  '',
-  'Options',
-  '  --foo  Lorem ipsum. [Default: false]',
-  '',
-  'Examples',
-  '  $ rollodeqc-gh-repo-webhooks',
-  '  unicorns & rainbows',
-  '  $ rollodeqc-gh-repo-webhooks ponies',
-  '  ponies & rainbows'
-])
+const cli = meow(`
+  Usage
+    $ rollodeqc-gh-repo-webhooks [input]
+
+  Options
+    --foo  Lorem ipsum. [Default: false]
+
+  Examples
+    $ rollodeqc-gh-repo-webhooks
+    unicorns & rainbows
+    $ rollodeqc-gh-repo-webhooks ponies
+    ponies & rainbows
+`)
 
 rollodeqcGhRepoWebhooks(cli.input[0] || 'millette', cli.input[1] || 'rollodeqc-gh-repo-webhooks')
   .then((response) => {
