@@ -29,8 +29,8 @@
   ],
   "dependencies": {
     "gh-got": "^8.1.0",
-    "meow": "^3.7.0",
-    "update-notifier": "^2.2.0"
+    "meow": "^5.0.0",
+    "update-notifier": "^3.0.1"
   },
   "devDependencies": {
     "ava": "^2.3.0",
